@@ -1,0 +1,10 @@
+﻿__pycache__/
+*.pyc
+.next/
+node_modules/
+uploads/
+runs/
+*.pkl
+*.pt
+.env
+.env.local
