@@ -2,9 +2,9 @@ fastapi
 uvicorn
 python-multipart
 ultralytics
-opencv-python
+opencv-python-headless
+scikit-learn
 numpy
 pandas
 joblib
-scikit-learn
 pillow
