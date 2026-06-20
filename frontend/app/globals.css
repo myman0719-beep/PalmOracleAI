@@ -1,0 +1,120 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #000;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+body{
+
+background:black;
+overflow:hidden;
+
+}
+
+body::before{
+
+content:"";
+
+position:fixed;
+
+width:100%;
+height:100%;
+
+background:url(
+"https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=1920"
+);
+
+background-size:cover;
+
+opacity:.2;
+
+animation:stars 30s linear infinite;
+
+}
+
+@keyframes stars{
+
+from{
+transform:translateY(0)
+}
+
+to{
+transform:translateY(-300px)
+}
+
+}
+
+.magic-circle{
+
+position:absolute;
+
+width:420px;
+height:420px;
+
+border-radius:50%;
+
+border:4px solid purple;
+
+top:-35px;
+left:-35px;
+
+animation:
+rotateMagic 8s linear infinite;
+
+box-shadow:
+0 0 50px purple,
+0 0 100px violet;
+
+}
+
+@keyframes rotateMagic{
+
+from{
+
+transform:rotate(0deg);
+
+}
+
+to{
+
+transform:rotate(360deg);
+
+}
+
+}
+.orb{
+
+width:120px;
+height:120px;
+
+border-radius:50%;
+
+animation:
+pulse 2s infinite;
+
+box-shadow:
+0 0 50px violet,
+0 0 100px purple;
+
+}
+
+@keyframes pulse{
+
+0%{
+transform:scale(1)
+}
+
+50%{
+transform:scale(1.2)
+}
+
+100%{
+transform:scale(1)
+}
+
+}
